@@ -232,7 +232,7 @@ export default function Projects() {
         {/* View all projects button */}
         <div className="mt-14 text-center">
           <a
-            href="https://github.com/kendrekaran"
+            href="https://github.com/NAVEEN171?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-all shadow-md hover:shadow-lg shadow-blue-500/20 hover:shadow-blue-600/30 text-sm"
