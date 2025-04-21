@@ -17,7 +17,8 @@ export function TypewriterEffectSmoothDemo() {
       <TypewriterEffectSmooth words={words} className="text-white" />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
         <Link
-          href="https://drive.google.com/uc?export=download&id=1vFgXCg2HMh3JIQF6WsRA0vgdoRe6Etg8"
+          href="https://drive.google.com/uc?export=download&id=1sWwTy7Ql8h8Gs7qCxQvvSP-Fk4z0gV1s
+"
           download="Naveen_Resume.pdf"
         >
           <button className="w-40 h-10 rounded-xl bg-blue-500 hover:bg-blue-900 dark:border-white border-white text-white text-sm">
