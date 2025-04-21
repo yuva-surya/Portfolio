@@ -32,7 +32,8 @@ const Hero = () => {
             applications. I&apos;m passionate about crafting seamless digital
             experiences that are both innovative and efficient. With every
             project, I aim to deliver solutions that not only meet goals but
-            also leave a lasting impact. Let's build something great together!
+            also leave a lasting impact. Let&apos;s build something great
+            together!
           </div>
         </div>
         <div className="mb-6 md:mb-0">
