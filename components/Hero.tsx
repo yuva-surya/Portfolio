@@ -27,8 +27,8 @@ const Hero = () => {
       <div className="flex flex-col-reverse md:flex-row justify-center md:gap-10 sm:py-4 items-center mt-8 md:mt-0">
         <div className="text-center md:text-left md:px-4 md:w-1/2">
           <div className="text-sm px-2 sm:px-0 font-normal text-white dark:text-white">
-            I&apos;m final-year B.Tech student and aspiring full-stack
-            developer, I thrive on turning ideas into dynamic, user-friendly web
+            I&apos;m a recent B.Tech graduate and aspiring full-stack developer,
+            I thrive on turning ideas into dynamic, user-friendly web
             applications. I&apos;m passionate about crafting seamless digital
             experiences that are both innovative and efficient. With every
             project, I aim to deliver solutions that not only meet goals but
