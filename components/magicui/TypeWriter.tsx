@@ -14,7 +14,7 @@ export function TypewriterEffectSmoothDemo() {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[10rem]  ">
-      <TypewriterEffectSmooth words={words} className="text-white" />
+      {/* <TypewriterEffectSmooth words={words} className="text-white" />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
         <Link
           href="https://drive.google.com/uc?export=download&id=1sWwTy7Ql8h8Gs7qCxQvvSP-Fk4z0gV1s
@@ -29,8 +29,7 @@ export function TypewriterEffectSmoothDemo() {
           <button className="w-40 h-10 rounded-xl bg-white text-black hover:bg-gray-400 border border-black  text-sm">
             Hire Me
           </button>
-        </Link>
-      </div>
+        </Link> */}
     </div>
   );
 }

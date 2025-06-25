@@ -36,22 +36,16 @@ export function FloatingDockDemo() {
       icon: (
         <RiLinkedinLine className="h-full w-full text-white  dark:text-white " />
       ),
-      href: "https://www.linkedin.com/in/naveenkumar-sunkana-a40711250/",
+      href: "https://www.linkedin.com/in/yuva-surya-kalagarla-69814a267",
     },
 
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-white  dark:text-white " />
-      ),
-      href: "https://x.com/Naveenk00398986",
-    },
+
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-white  dark:text-white " />
       ),
-      href: "https://github.com/NAVEEN171",
+      href: "https://github.com/yuva-surya",
     },
   ];
   return (

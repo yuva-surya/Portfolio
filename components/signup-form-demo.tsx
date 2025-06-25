@@ -35,19 +35,10 @@ export default function SignupFormDemo() {
 
         <div className="flex flex-col space-y-4 w-full max-w-xs">
           {/* Twitter Button */}
-          <Link
-            href="https://x.com/Naveenk00398986"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative group/btn flex space-x-2 items-center justify-start px-4 py-2 rounded-md font-medium bg-zinc-900 text-neutral-300 shadow-lg hover:shadow-xl transition-all"
-          >
-            <IconBrandTwitter className="h-5 w-5" />
-            <span>Twitter</span>
-            <BottomGradient />
-          </Link>
+          
 
           <Link
-            href="mailto:naveenkumar171837@gmail.com" // Replace with your actual email
+            href="mailto:yuvasurya1904@gmail.com" // Replace with your actual email
             className="relative group/btn flex space-x-2 items-center justify-start px-4 py-2 rounded-md font-medium bg-zinc-900 text-neutral-300 shadow-lg hover:shadow-xl transition-all"
           >
             {/* You can replace the icon below with any email icon you want */}
@@ -58,7 +49,7 @@ export default function SignupFormDemo() {
 
           {/* GitHub Button */}
           <Link
-            href="https://github.com/NAVEEN171"
+            href="https://github.com/yuva-surya"
             target="_blank"
             rel="noopener noreferrer"
             className="relative group/btn flex space-x-2 items-center justify-start px-4 py-2 rounded-md font-medium bg-zinc-900 text-neutral-300 shadow-lg hover:shadow-xl transition-all"
@@ -70,7 +61,7 @@ export default function SignupFormDemo() {
 
           {/* LinkedIn Button */}
           <Link
-            href="https://www.linkedin.com/in/naveenkumar-sunkana-a40711250/"
+            href="https://www.linkedin.com/in/yuva-surya-kalagarla-69814a267"
             target="_blank"
             rel="noopener noreferrer"
             className="relative group/btn flex space-x-2 items-center justify-start px-4 py-2 rounded-md font-medium bg-zinc-900 text-neutral-300 shadow-lg hover:shadow-xl transition-all"

@@ -25,39 +25,36 @@ interface Project {
 }
 
 export default function Projects() {
-  const [activeTab, setActiveTab] = useState<"fullstack" | "Freelance">(
-    "fullstack"
-  );
+ 
   const [, setHoveredIndex] = useState<number | null>(null);
 
   const projects: Record<string, Project[]> = {
     fullstack: [
       {
-        title: "Job Board",
+        title: "Weed detector ",
         url: "https://job-board-rust-alpha.vercel.app",
-        imageUrl: `/job_board.png`,
+        imageUrl: `/weeddetector.png`,
         github: "https://github.com/NAVEEN171/Job_board",
         techStack: [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "MongoDB",
-          "Redis",
+          "CNN",
+          "Python",
+          "Deep learning",
+         
         ],
       },
       {
-        title: "Contest Tracker",
+        title: "Expense Tracker",
         url: "https://contests-tracker-nu.vercel.app/",
-        imageUrl: `/contest_tracker.png`,
+        imageUrl: `/Pega-Business.png`,
         github: "https://github.com/NAVEEN171/Contests-Tracker",
-        techStack: ["React", "Node.js", "Express", "MongoDB"],
+        techStack: ["Pega"],
       },
       {
-        title: "Chat Application",
+        title: "Portfolio",
         url: "https://chat-app-five-dun.vercel.app/",
-        imageUrl: `/chat_app.png`,
+        imageUrl: `/portfolio.png`,
         github: "https://github.com/NAVEEN171/chat_app",
-        techStack: ["React", "Node.js", "Express", " Socket.io", "MongoDB"],
+        techStack: ["Html","CSS","Javascript"],
       },
     ],
     Freelance: [
@@ -89,8 +86,6 @@ export default function Projects() {
         return <SiTypescript className="text-blue-600" />;
       case "Redis":
         return <SiRedis className="text-red-500" />;
-      case "Postgresql":
-        return <SiPostgresql className="text-blue-500" />; // Placeholder for PostgreSQL icon
       default:
         return <SiVercel className="text-white" />;
     }
@@ -119,34 +114,18 @@ export default function Projects() {
               />
             </h2>
           </motion.div>
-          <p className="text-gray-400  max-w-lg mx-auto text-sm md:text-base">
-            A showcase of my web development journey, highlighting full-stack
-            applications and freelance projects.
-          </p>
+       
         </div>
 
         {/* Tabs */}
         <div className="flex justify-center rounded-xl mb-10">
-          <div className="inline-flex p-1 bg-gray-900/50 rounded-xl">
-            {(["fullstack", "Freelance"] as const).map((tab) => (
-              <button
-                key={tab}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                  activeTab === tab
-                    ? "bg-blue-500 text-white shadow-lg rounded-xl shadow-blue-500/20"
-                    : "text-gray-400 hover:text-white"
-                }`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab === "fullstack" ? "Fullstack Projects" : "Freelance"}
-              </button>
-            ))}
+          <div className="inline-flex p-1 bg-gray-900/50 rounded-xl">              
           </div>
         </div>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {projects[activeTab].map((project, index) => (
+          {projects["fullstack"].map((project, index) => (
             <div
               key={index}
               className="group cursor-pointer transform transition-all duration-300 hover:-translate-y-1"
@@ -168,16 +147,8 @@ export default function Projects() {
 
                   {/* Action buttons */}
                   <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 bg-blue-500/80 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors"
-                      aria-label={`Visit ${project.title}`}
-                    >
-                      <Eye className="w-4 h-4" />
-                    </a>
-                    {project.github && (
+                    
+                    {/* {project.github && (
                       <a
                         href={project.github}
                         target="_blank"
@@ -187,7 +158,7 @@ export default function Projects() {
                       >
                         <Code className="w-4 h-4" />
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </div>
 
@@ -197,7 +168,7 @@ export default function Projects() {
                     <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">
                       {project.title}
                     </h3>
-                    <a
+                    {/* <a
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -205,12 +176,12 @@ export default function Projects() {
                       aria-label={`External link to ${project.title}`}
                     >
                       <ExternalLink className="w-4 h-4" />
-                    </a>
+                    </a> */}
                   </div>
 
-                  <p className="text-gray-500 text-xs mb-3 truncate">
+                  {/* <p className="text-gray-500 text-xs mb-3 truncate">
                     {project.url.replace("http://", "")}
-                  </p>
+                  </p> */}
 
                   <div className="flex flex-wrap gap-1.5">
                     {project.techStack.map((tech, i) => (
@@ -230,17 +201,7 @@ export default function Projects() {
         </div>
 
         {/* View all projects button */}
-        <div className="mt-14 text-center">
-          <a
-            href="https://github.com/NAVEEN171?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-all shadow-md hover:shadow-lg shadow-blue-500/20 hover:shadow-blue-600/30 text-sm"
-          >
-            <span>View All Projects</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
-        </div>
+        
       </div>
     </section>
   );

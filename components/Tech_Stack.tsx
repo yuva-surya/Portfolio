@@ -5,8 +5,11 @@ import { motion } from "framer-motion";
 import { 
   SiHtml5, SiCss3, SiJavascript, SiTailwindcss, 
   SiTypescript, SiReact, SiNodedotjs, SiExpress,
-  SiMongodb, SiNextdotjs
+  SiMongodb, SiNextdotjs,SiMysql
 } from "react-icons/si";
+import { BiLogoJava } from "react-icons/bi";
+
+
 
 interface Skill {
   name: string;
@@ -20,12 +23,10 @@ const Skills: React.FC = () => {
     { name: "CSS", icon: SiCss3, color: "text-blue-500" },
     { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
     { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-400" },
-    { name: "React", icon: SiReact, color: "text-blue-400" },
-    { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
-    { name: "Express.js", icon: SiExpress, color: "text-gray-400" },
-    { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
-    { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
-    { name: "Next.js", icon: SiNextdotjs, color: "text-white" }
+    { name: "SQL", icon: SiMysql, color: "text-cyan-400" },
+    { name: "JAVA", icon: BiLogoJava, color: "text-cyan-400" },
+
+
   ];
 
   const container = {
